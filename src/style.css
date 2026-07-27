@@ -1,0 +1,161 @@
+:root {
+  --accent: #6d28d9;
+  --bg: #f4f5f7;
+  --card-bg: #ffffff;
+  --text: #111827;
+  --text-muted: #6b7280;
+  --border: #e5e7eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.phone {
+  max-width: 420px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: calc(24px + env(safe-area-inset-top)) 20px
+    calc(40px + env(safe-area-inset-bottom));
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.greeting {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.balance-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: linear-gradient(135deg, var(--accent), #4f46e5);
+  color: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.balance-label {
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.balance-amount {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.balance-account {
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.transactions h2,
+.demo-controls h2 {
+  font-size: 15px;
+  margin: 0 0 12px;
+}
+
+.transactions ul {
+  list-style: none;
+  margin: 0 0 28px;
+  padding: 0;
+  background: var(--card-bg);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.transactions li {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+}
+
+.transactions li:last-child {
+  border-bottom: none;
+}
+
+.tx-amount {
+  color: var(--text-muted);
+}
+
+.tx-amount.positive {
+  color: #16a34a;
+}
+
+.demo-controls {
+  border-top: 1px dashed var(--border);
+  padding-top: 20px;
+}
+
+.demo-controls p {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin: 0 0 12px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.actions button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--accent);
+  background: #fff;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.actions button:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+#log {
+  background: #111827;
+  color: #d1d5db;
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  min-height: 60px;
+  max-height: 140px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  margin: 0;
+}
