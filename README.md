@@ -1,6 +1,8 @@
-# capacitor-privacy-screen-demo
+# Capacitor Privacy Screen Plugin Demo App
 
 ⚡️ Simple vanilla JS + Capacitor app to demonstrate the use of the [Capacitor Privacy Screen plugin](https://capawesome.io/docs/sdks/capacitor/privacy-screen/).
+
+📖 Read the accompanying blog post: [Capacitor Privacy Screen: Hide Sensitive App Content](https://capawesome.io/blog/capacitor-privacy-screen-hide-app-content).
 
 ## Plugins
 
